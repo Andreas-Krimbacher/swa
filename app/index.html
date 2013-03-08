@@ -11,6 +11,8 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/resources/css/ext-all-gray-debug.css">
+    <link rel="stylesheet" href="styles/OpenLayers/style.css">
   </head>
   <body ng-app="swaApp">
     <!--[if lt IE 7]>
@@ -23,8 +25,9 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view></div>
-
+    <div ng-controller="MainCtrl" ng-view></div>
+    <script src="components/OpenLayers-2.12/OpenLayers.debug.js"></script>
+    <script src="components/extjs/ext-all-debug.js"></script>
     <script src="components/angular/angular.js"></script>
     <script src="components/angular-resource/angular-resource.js"></script>
     <script src="components/angular-cookies/angular-cookies.js"></script>
@@ -33,10 +36,8 @@
     <!-- build:js scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/directives/myDirective.js"></script>
-    <script src="scripts/controllers/user.js"></script>
-    <script src="scripts/filters/myFilter.js"></script>
-    <script src="scripts/services/myService.js"></script>
+    <script src="scripts/directives/slider.js"></script>
+    <script src="scripts/controllers/map.js"></script>
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

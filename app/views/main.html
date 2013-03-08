@@ -1,9 +1,16 @@
 <div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
+    <div id="map-container" ng-controller="MapCtrl">
+        <div id="map"></div>
+
+        <div id="edit-toolbar">
+            <div class="btn-group">
+                <a class="btn btn-small" href="" ng-click="edit.activate();"><i class="icon-edit"></i></a>
+                <a class="btn btn-small" href="" ng-click="save()"><i class="icon-folder-close"></i></a>
+            </div>
+
+
+        </div>
+        <div id="edit-attributes"></div>
+
+    </div>
 </div>
