@@ -1,11 +1,11 @@
 'use strict';
 
-angular.module('swaApp', [])
+angular.module('swaApp', ['ui.bootstrap.tabs','ngSanitize'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/mapView.html',
+        controller: 'MapViewCtrl'
       })
       .otherwise({
         redirectTo: '/'
