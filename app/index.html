@@ -11,10 +11,10 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/resources/css/ext-all-gray-debug.css">
     <link rel="stylesheet" href="styles/OpenLayers/style.css">
+
   </head>
-  <body ng-app="swaApp">
+  <body ng-app="swa">
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
@@ -24,35 +24,53 @@
       <script src="components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
+
     <!-- Add your site or application content here -->
-    <div ng-controller="MainCtrl" ng-view></div>
+    <div id="container">
+        <div ng-controller="MainCtrl" ng-view></div>
+    </div>
+
+    <script src="components/jquery/jquery.js"></script>
+
+    <script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
     <script src="components/OpenLayers-2.12/OpenLayers.debug.js"></script>
-    <script src="components/extjs/ext-all-debug.js"></script>
     <script src="components/angular/angular.js"></script>
     <script src="components/angular-resource/angular-resource.js"></script>
     <script src="components/angular-cookies/angular-cookies.js"></script>
     <script src="components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="components/angular-bootstrap/src/tabs/tabs.js"></script>
+
+    <script src="components/angular-ui-bootstrap/src/dropdownToggle/dropdownToggle.js"></script>
 
     <!-- build:js scripts/scripts.js -->
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/directives/slider.js"></script>
-    <script src="scripts/controllers/mapView.js"></script>
-    <script src="scripts/directives/edittoolbar.js"></script>
-    <script src="scripts/services/layers.js"></script>
-    <script src="scripts/services/map.js"></script>
-    <script src="scripts/services/settings.js"></script>
-    <script src="scripts/services/util.js"></script>
-    <script src="scripts/filters/filter.js"></script>
+
+    <script src="scripts/lib/Class.js"></script>
+    <script src="scripts/lib/lib.js"></script>
+    <script src="scripts/lib/DrawFeature.js"></script>
+
+    <script src="scripts/main/module.js"></script>
+    <script src="scripts/main/controllers/main.js"></script>
+
+    <script src="scripts/util/module.js"></script>
+    <script src="scripts/util/services/util.js"></script>
+    <script src="scripts/util/services/settings.js"></script>
+
+    <script src="scripts/map/module.js"></script>
+    <script src="scripts/map/controllers/map.js"></script>
+    <script src="scripts/map/services/map.js"></script>
+    <script src="scripts/map/directives/map.js"></script>
+    <script src="scripts/map/directives/layerswitcher.js"></script>
+    <script src="scripts/map/GoogleMapsFix.js"></script>
+
+    <script src="scripts/parkCreator/module.js"></script>
+    <script src="scripts/parkCreator/controllers/parkCreator.js"></script>
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
+    <!--<script>-->
+      <!--var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];-->
+      <!--(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];-->
+      <!--g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';-->
+      <!--s.parentNode.insertBefore(g,s)}(document,'script'));-->
+    <!--</script>-->
   </body>
 </html>
