@@ -2,7 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b764f308-9c2b-430d-a297-bccaa93a01bc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/map/directives/layerControl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/map/directives/typeSwitcher.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/toolbar/controllers/toolbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/toolbar/directives/toolbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/toolbar/module.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/util/directives/slider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/util/directives/tooltip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/map/layerControl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/map/typeSwitcher.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/toolbar/toolbar.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/old/controllers/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/old/controllers/mapView.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/old/directives/edittoolbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/old/filters/filter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/old/services/layers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/old/services/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/old/services/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/old/editToolbar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/old/mapView.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/old/user.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/scripts/map/directives/layerswitcher.js" afterPath="$PROJECT_DIR$/app/scripts/map/directives/baseSwitcher.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/map/layerswitcher.html" afterPath="$PROJECT_DIR$/app/views/map/baseSwitcher.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/lib/DrawFeature.js" afterPath="$PROJECT_DIR$/app/scripts/lib/DrawFeature.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/lib/lib.js" afterPath="$PROJECT_DIR$/app/scripts/lib/lib.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/main/controllers/main.js" afterPath="$PROJECT_DIR$/app/scripts/main/controllers/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/map/controllers/map.js" afterPath="$PROJECT_DIR$/app/scripts/map/controllers/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/map/directives/map.js" afterPath="$PROJECT_DIR$/app/scripts/map/directives/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/map/module.js" afterPath="$PROJECT_DIR$/app/scripts/map/module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/map/services/map.js" afterPath="$PROJECT_DIR$/app/scripts/map/services/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/parkCreator/controllers/parkCreator.js" afterPath="$PROJECT_DIR$/app/scripts/parkCreator/controllers/parkCreator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/parkCreator/module.js" afterPath="$PROJECT_DIR$/app/scripts/parkCreator/module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/util/services/settings.js" afterPath="$PROJECT_DIR$/app/scripts/util/services/settings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/parkCreator.html" afterPath="$PROJECT_DIR$/app/views/parkCreator.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
     </list>
     <ignored path="SWA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,71 +59,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="DrawFeature.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/lib/DrawFeature.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="36" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/util/services/settings.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="22" selection-start="51" selection-end="59" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="43" selection-start="2126" selection-end="2126" vertical-scroll-proportion="-23.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="map.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/scripts/map/directives/map.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="287" selection-end="287" vertical-scroll-proportion="0.44680852">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parkCreator.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/parkCreator.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parkCreator.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/parkCreator/controllers/parkCreator.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="9" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="map.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/map/services/map.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="27" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -101,22 +75,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/scripts/map/directives/layerswitcher.js" />
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/app/scripts/map/GoogleMapsFix.js" />
+        <option value="$PROJECT_DIR$/app/scripts/map/directives/baseSwitcher.js" />
+        <option value="$PROJECT_DIR$/app/scripts/map/module.js" />
+        <option value="$PROJECT_DIR$/app/views/map/layerControl.html" />
+        <option value="$PROJECT_DIR$/app/scripts/map/directives/layerControl.js" />
+        <option value="$PROJECT_DIR$/app/scripts/map/directives/map.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/views/map/typeSwitcher.html" />
+        <option value="$PROJECT_DIR$/app/scripts/parkCreator/controllers/parkCreator.js" />
         <option value="$PROJECT_DIR$/app/styles/main.scss" />
-        <option value="$PROJECT_DIR$/app/scripts/objects/drawingObject" />
-        <option value="$PROJECT_DIR$/app/scripts/objects/lib.js" />
-        <option value="$PROJECT_DIR$/app/scripts/lib/drawFeature" />
-        <option value="$PROJECT_DIR$/app/scripts/lib/drawFeature.js" />
+        <option value="$PROJECT_DIR$/app/scripts/util/directives/tooltip.js" />
+        <option value="$PROJECT_DIR$/app/scripts/map/directives/typeSwitcher.js" />
+        <option value="$PROJECT_DIR$/app/scripts/util/directives/slider.js" />
+        <option value="$PROJECT_DIR$/app/scripts/map/services/map.js" />
         <option value="$PROJECT_DIR$/app/scripts/lib/DrawFeature.js" />
         <option value="$PROJECT_DIR$/app/scripts/util/services/settings.js" />
-        <option value="$PROJECT_DIR$/app/scripts/map/controllers/map.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/scripts/parkCreator/controllers/parkCreator.js" />
-        <option value="$PROJECT_DIR$/app/scripts/map/services/map.js" />
-        <option value="$PROJECT_DIR$/app/scripts/map/directives/map.js" />
-        <option value="$PROJECT_DIR$/app/views/parkCreator.html" />
+        <option value="$PROJECT_DIR$/Gruntfile.js" />
       </list>
     </option>
   </component>
@@ -152,6 +126,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -184,267 +159,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parkCreator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="old" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="old" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="filters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="old" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="old" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="map" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="map" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SWA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -467,8 +183,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/styles" />
-      <recent name="$PROJECT_DIR$/app/styles/images" />
+      <recent name="$PROJECT_DIR$/app/views/map" />
+      <recent name="$PROJECT_DIR$/app/scripts/map/directives" />
+      <recent name="$PROJECT_DIR$/app/scripts/util/directives" />
+      <recent name="$PROJECT_DIR$/dist" />
+      <recent name="$PROJECT_DIR$/dist/scripts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/scripts/util/services" />
@@ -558,7 +277,11 @@
       <created>1367094458430</created>
       <updated>1367094458430</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Park Creator 0.1.0">
+      <created>1367094467223</created>
+      <updated>1367094467223</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -642,120 +365,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/scripts/lib/lib.js">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
+        <state line="73" column="55" selection-start="3503" selection-end="3503" vertical-scroll-proportion="-35.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/old/directives/edittoolbar.js">
+    <entry file="file://$PROJECT_DIR$/app/views/map/baseSwitcher.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.17526777">
+        <state line="1" column="43" selection-start="77" selection-end="86" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/OpenLayers-2.12/lib/OpenLayers/Util.js">
+    <entry file="file://$PROJECT_DIR$/app/views/map/typeSwitcher.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="966" column="22" selection-start="30865" selection-end="30871" vertical-scroll-proportion="14.475525">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/OpenLayers-2.12/lib/OpenLayers/Layer/Vector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="241" column="38" selection-start="9507" selection-end="9514" vertical-scroll-proportion="0.25674325">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/OpenLayers-2.12/lib/OpenLayers/Layer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="458" column="30" selection-start="14719" selection-end="14719" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/lib/DrawFeature.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="36" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
+        <state line="2" column="128" selection-start="294" selection-end="301" vertical-scroll-proportion="-1.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/util/services/settings.js">
+    <entry file="file://$PROJECT_DIR$/app/views/map/layerControl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="51" selection-end="59" vertical-scroll-proportion="0.0">
+        <state line="3" column="141" selection-start="334" selection-end="439" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/map/directives/layerControl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="70" selection-start="582" selection-end="634" vertical-scroll-proportion="0.23369037">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="1" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
+        <state line="1" column="9" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="43" selection-start="2126" selection-end="2126" vertical-scroll-proportion="-23.125">
+        <state line="183" column="15" selection-start="5738" selection-end="5738" vertical-scroll-proportion="0.7352941">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/map/directives/layerswitcher.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/util/services/settings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="80" column="40" selection-start="2372" selection-end="2372" vertical-scroll-proportion="0.40441176">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/parkCreator.html">
+    <entry file="file://$PROJECT_DIR$/app/scripts/lib/DrawFeature.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/parkCreator/module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/map/controllers/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="39" selection-start="139" selection-end="139" vertical-scroll-proportion="0.05842259">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/parkCreator/controllers/parkCreator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
+        <state line="67" column="56" selection-start="2294" selection-end="2294" vertical-scroll-proportion="0.5367647">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/map/services/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="27" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
+        <state line="19" column="10" selection-start="565" selection-end="565" vertical-scroll-proportion="0.33235294">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/map/directives/map.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/util/directives/slider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="287" selection-end="287" vertical-scroll-proportion="0.44680852">
+        <state line="27" column="42" selection-start="695" selection-end="695" vertical-scroll-proportion="0.53088236">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/toolbar/toolbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="945" selection-end="945" vertical-scroll-proportion="0.34992224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/parkCreator/controllers/parkCreator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="73" selection-start="122" selection-end="122" vertical-scroll-proportion="0.066176474">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/map/directives/typeSwitcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="37" selection-start="210" selection-end="210" vertical-scroll-proportion="0.15441176">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/main/controllers/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="46" selection-start="83" selection-end="83" vertical-scroll-proportion="0.066176474">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/util/directives/tooltip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="46" selection-start="165" selection-end="165" vertical-scroll-proportion="0.13235295">
           <folding />
         </state>
       </provider>

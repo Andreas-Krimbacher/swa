@@ -1,0 +1,33 @@
+<div id="pc-toolbar">
+    <div class="btn-group drawFeature">
+        <a class="btn btn-inverse" ng-repeat="feature in drawFeatures" util-tooltip title="{{feature.name}}"><img ng-src="{{feature.toolbarIcon}}"/></a>
+    </div>
+
+    <div class="btn-group selectFeature">
+        <a class="btn btn-inverse" ng-click="changeType('POLYGON')"><i class="icon-white icon-th-large"></i>Fläche</a>
+        <a class="btn btn-inverse" ng-click="changeType('LINESTRING')"><i class="icon-white icon-ok"></i>Linie</a>
+        <a class="btn btn-inverse" ng-click="changeType('POINT')"><i class="icon-white icon-map-marker"></i>Punkt</a>
+        <a class="btn btn-inverse" ><i class="icon-white icon-pencil"></i>Edit</a>
+    </div>
+
+    <div class="attrInput">
+        <form name="attributeForm" id="attributeForm">
+            <span class="label" ng-class="{true:'label-important', false:'label-success'}[attributeForm.name.$invalid]">Name:</span>
+            <input type="text" class="name" name="name" ng-model="editFeature.title" required>
+
+            <a class="btn btn-mini btn-info upload"><i class="icon-white icon-picture"></i></a>
+
+            <span class="label" ng-class="{true:'label-important', false:'label-success'}[attributeForm.type.$invalid]">Typ:</span>
+            <select class="type" name="type"  ng-model="editFeature.type" ng-change="typChange()" required>
+                <option value="" disabled selected>-- Select One --</option>
+                <option value="plan">Plan Hintergrund</option>
+                <option value="planOverlay">Plan im Plan</option>
+                <option value="point">Punkt-Element</option>
+                <option value="line">Linien-Element</option>
+                <option value="poly">Flächen-Element</option>
+            </select>
+
+            <button class="btn btn-mini send" type="button" ng-click="saveFeature()" ng-disabled="attributeForm.$invalid" ng-class="{true:'btn-danger', false:'btn-success'}[attributeForm.$invalid]">Speichern</button>
+        </form>
+    </div>
+</div>

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('swa.map')
-    .factory('OpenLayersMap', function ($rootScope) {
+    .factory('OpenLayersMap', function () {
         // Service logic
         var map = null;
         var offline = false;
@@ -17,7 +17,7 @@ angular.module('swa.map')
             map.addLayer(_basemaps[id].map);
             _basemaps[id].active = true;
             _currentBasempas = _basemaps[id];
-        }
+        };
 
 
         // Public API here

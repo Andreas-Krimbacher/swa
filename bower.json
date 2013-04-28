@@ -12,7 +12,8 @@
     "json3": "~3.2.4",
     "OpenLayers-2.12": "~undefined",
     "angular-ui-bootstrap": "~0.2.0",
-    "jquery": "~2.0.0"
+    "jquery": "~2.0.0",
+    "jquery-ui": "~1.10.2"
   },
   "ignore": [
     "**/.*",

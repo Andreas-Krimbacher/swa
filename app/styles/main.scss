@@ -1,6 +1,10 @@
 @import "compass_twitter_bootstrap";
 @import "compass/css3";
 
+body{
+  @include user-select(none);
+}
+
 $black : #373737;
 
 div.olControlZoom a {
@@ -12,62 +16,30 @@ div.olControlZoom a {
   }
 }
 
+img { max-width: none; }
 
 #container{
   margin-top: 10px;
   margin: auto;
-  width: 800px;
+  width: 910px;
+  height: 680px;
+  overflow: hidden;
 }
 
 #map {
-  width: 800px;
+  width: 900px;
   height: 600px;
   border: solid 5px #006400;
   margin: auto;
 }
 
-
-#edit-side-panel{
-  width: 250px;
-  height: 400px;
+map-base-switcher{
   position: absolute;
-  top: 100px;
-  right: 50px;
-  background-color: #f5f5f5;
-  opacity: 0.7;
-  z-index: 2500;
-  @include single-box-shadow;
-  @include border-radius(5px);
-}
-
-#edit-toolbar{
-  position: absolute;
-  top: 100px;
-  left: 500px;
-  z-index: 2500;
-}
-
-img { max-width: none; }
-
-.tab-content{
-  padding-left: 20px;
-  font-weight: 700;
-}
-
-select{
-  width: 150px;
-}
-
-input{
-  width: 110px;
-}
-
-layerswitcher{
-  position: relative;
-  top: -597px;
-  left: 50px;
+  top: 72px;
+  left: 235px;
   #layerswitcher{
     z-index: 2400;
+    width: 60px;
     a{
       display: inline-block;
       cursor: pointer;
@@ -78,3 +50,151 @@ layerswitcher{
   }
 }
 
+
+map-layer-control{
+  position: absolute;
+  top: 72px;
+  left: 500px;
+  z-index: 2400;
+  #layerControl{
+    width: 205px;
+    height: 25px;
+    background: $black;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    util-slider{
+      top: -2px;
+      position: relative;
+      margin-left: 5px;
+    }
+    .slider{
+      display: inline-block;
+      width: 110px;
+      display: inline-block;
+      margin-left: 5px;
+      height: 2px;
+      .ui-slider-handle{
+        top: -.5em;
+        width: 3px;
+        margin-left: -.2em;
+        background: #eee !important;
+        height: 1em;
+      }
+      .ui-state-hover{
+        border: 1px solid #ccc;
+        background: #555555 url(images/ui-bg_glass_20_555555_1x400.png) 50% 50% repeat-x;
+      }
+      .ui-state-active{
+        border: 1px solid #ccc;
+        background: #555555 url(images/ui-bg_glass_20_555555_1x400.png) 50% 50% repeat-x;
+      }
+      .ui-state-focus{
+        border: 1px solid #ccc;
+        background: #555555 url(images/ui-bg_glass_20_555555_1x400.png) 50% 50% repeat-x;
+      }
+    }
+    .button-icon{
+      display: inline-block;
+      margin-left: 10px;
+    }
+    .icon-white{
+      margin-top: 3px;
+    }
+    .line{
+
+      margin-left: 10px;
+      margin-right: 0px;
+      margin-top: -1px;
+      border-top-left-radius:3px;
+      border-top-right-radius:0px;
+      border-bottom-right-radius:0px;
+      border-bottom-left-radius:3px;
+      height: 21px;
+    }
+    .point{
+      margin-top: -1px;
+      margin-left: -4px;
+      border-top-left-radius:0px;
+      border-top-right-radius:3px;
+      border-bottom-right-radius:3px;
+      border-bottom-left-radius:0px;
+      height: 21px;
+    }
+  }
+}
+
+map-type-switcher{
+  position: absolute;
+  top: 72px;
+  right: 200px;
+  z-index: 2400;
+}
+
+#pc-toolbar{
+  position: absolute;
+  z-index: 3400;
+  top: 570px;
+  left: 260px;
+  width: 0px;
+  .selectFeature{
+    .icon-white{
+      margin-right: 6px;
+      margin-left: -7px;
+    }
+  }
+  .drawFeature{
+    margin-left: 30px;
+    height: 31px;
+    .icon-white{
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+  }
+}
+
+.attrInput{
+  position: absolute;
+  z-index: 2400;
+  top: -20px;
+  left: 440px;
+  width: 325px;
+  height: 55px;
+  background: $black;
+  border-color: rgba(0, 0, 0, 0.15);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  .label{
+    vertical-align: top;
+    margin-right: 10px;
+    margin-top: 3px;
+    display: inline-block;
+    width: 40px;
+  }
+  .name{
+    width: 150px;
+    height: 14px;
+    font-size: 14px;
+  }
+  .upload{
+    margin-left: 30px;
+    margin-bottom: 5px;
+    i{
+      margin-top: -1px;
+    }
+  }
+  .type{
+    width: 165px;
+    height: 24px;
+    font-size: 14px;
+    color: black !important;
+  }
+  .send{
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+}

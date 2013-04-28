@@ -1,4 +1,4 @@
 'use strict';
 
-angular.module('swa.parkCreator', ['swa.util','swa.map']);
+angular.module('swa.parkCreator', ['swa.parkCreator.toolbar']);
 

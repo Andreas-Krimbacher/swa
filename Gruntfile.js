@@ -41,7 +41,7 @@ module.exports = function (grunt) {
                     port: 9000,
                     // Change this to '0.0.0.0' to access the server from outside.
                     hostname: 'localhost',
-                    bases: [yeomanConfig.app,'.tmp'],
+                    bases: [yeomanConfig.app,'.tmp','<%= yeoman.app %>/components/angular-ui-bootstrap'],
                     //server: path.resolve('app/server/server.js'),
                     watchChanges: true
                     //debug:true
@@ -54,7 +54,9 @@ module.exports = function (grunt) {
             }
         },
         clean: {
-            server: '.tmp'
+            build: {
+                src: ["dist/"]
+            }
         },
         testacular: {
             unit: {
@@ -78,6 +80,72 @@ module.exports = function (grunt) {
                     debugInfo: true
                 }
             }
+        },
+        jshint: {
+            options: {
+                curly: true,
+                eqeqeq: true,
+                immed: true,
+                latedef: true,
+                newcap: true,
+                noarg: true,
+                sub: true,
+                undef: true,
+                boss: true,
+                eqnull: true,
+                browser: true
+            },
+            globals: {
+                jQuery: true
+            }
+        },
+        'useminPrepare': {
+            html: 'index.html'
+        },
+        usemin: {
+            html: ['<%= yeoman.dist %>/*.html'],
+            options: {
+                dirs: ['<%= yeoman.dist %>']
+            }
+        },
+        cssmin: {
+            combine: {
+                files: {
+                    '<%= yeoman.dist %>/styles/main.min.css': ['<%= yeoman.app %>/styles/OpenLayers/style.css', '.tmp/styles/main.css']
+                }
+            }
+        },
+        htmlmin: {                                     // Task
+            dist: {                                      // Target
+                options: {                                 // Target options
+                    removeComments: true,
+                    collapseWhitespace: true
+                },
+                files: {                                   // Dictionary of files
+                    '<%= yeoman.dist %>/index.html': '<%= yeoman.app %>/index.html'     // 'destination': 'source'
+                }
+            }
+        },
+        concat: {
+            '.tmp/js/app.js': ['<%= yeoman.app %>/scripts/**/**/**.js']
+        },
+        uglify: {
+            dist: {
+                files: {
+                    '<%= yeoman.dist %>/scripts/js.min.js': ['.tmp/js/app.js']
+                }
+            }
+        },
+        copy: {
+            build:{
+                files: [
+                    {expand: true, cwd: '<%= yeoman.app %>/', src: ['*'], dest: '<%= yeoman.dist %>/'},
+                    {expand: true,  cwd: '<%= yeoman.app %>/', src: ['components/**'], dest: '<%= yeoman.dist %>/'},
+                    {expand: true,  cwd: '<%= yeoman.app %>/', src: ['views/**'], dest: '<%= yeoman.dist %>/'},
+                    {expand: true,  cwd: '<%= yeoman.app %>/', src: ['styles/images/**'], dest: '<%= yeoman.dist %>/'},
+                    {expand: true,  cwd: '<%= yeoman.app %>/styles/OpenLayers/', src: ['img/**'], dest: '<%= yeoman.dist %>/styles/'}
+                    ]
+            }
         }
     });
 
@@ -86,7 +154,6 @@ module.exports = function (grunt) {
     grunt.renameTask('mincss', 'cssmin');
 
     grunt.registerTask('server', [
-//    'clean:server',
         'compass:server',
         'configureProxies',
         'livereload-start',
@@ -102,22 +169,21 @@ module.exports = function (grunt) {
         'testacular'
     ]);
 
-//  grunt.registerTask('build', [
-//    'clean:dist',
-//    'jshint',
+  grunt.registerTask('build', [
+ //   'clean',
+    'jshint',
 //    'test',
-//    'compass:dist',
+    'compass:dist',
 //    'useminPrepare',
 //    'imagemin',
-//    'cssmin',
-//    'htmlmin',
-//    'concat',
+      'cssmin',
+    'concat',
 //    'copy',
 //    'cdnify',
 //    'usemin',
-//    'ngmin',
-//    'uglify'
-//  ]);
+      'htmlmin'
+    //'uglify'
+  ]);
 
     grunt.registerTask('default', ['server']);
 };

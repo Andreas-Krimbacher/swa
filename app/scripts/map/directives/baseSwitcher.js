@@ -1,9 +1,9 @@
 'use strict';
 
 angular.module('swa.map')
-  .directive('layerswitcher', function (OpenLayersMap) {
+  .directive('mapBaseSwitcher', ['OpenLayersMap',function (OpenLayersMap) {
     return {
-      templateUrl: '../views/map/layerswitcher.html',
+      templateUrl: '../views/map/baseSwitcher.html',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
           scope.basemaps = OpenLayersMap.getBasemaps();
@@ -15,4 +15,4 @@ angular.module('swa.map')
 
       }
     };
-  });
+  }]);
