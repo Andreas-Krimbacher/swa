@@ -1,16 +1,20 @@
 <div id="pc-toolbar">
     <div class="btn-group drawFeature">
-        <a class="btn btn-inverse" ng-repeat="feature in drawFeatures" util-tooltip title="{{feature.name}}"><img ng-src="{{feature.toolbarIcon}}"/></a>
+        <a class="btn btn-inverse" ng-repeat="feature in drawFeatures" util-tooltip title="{{feature.name}}" ng-click="drawFeature(feature)">
+            <img ng-src="{{feature.toolbarIcon}}"/>
+        </a>
     </div>
 
     <div class="btn-group selectFeature">
-        <a class="btn btn-inverse" ng-click="changeType('POLYGON')"><i class="icon-white icon-th-large"></i>Fläche</a>
-        <a class="btn btn-inverse" ng-click="changeType('LINESTRING')"><i class="icon-white icon-ok"></i>Linie</a>
-        <a class="btn btn-inverse" ng-click="changeType('POINT')"><i class="icon-white icon-map-marker"></i>Punkt</a>
-        <a class="btn btn-inverse" ><i class="icon-white icon-pencil"></i>Edit</a>
+        <div class="placeholder"><a class="btn btn-inverse cancel" ng-show="process" ng-click="cancelProcess()"><i class="icon-white  icon-ban-circle"></i></a></div>
+        <a class="btn withText" ng-class="{'btn-inverse':mode != 'poly','btn-warning':mode == 'poly','endButton':!process}" ng-click="changeType('POLYGON')"><i class="icon-white icon-th-large"></i>Fläche</a>
+        <a class="btn withText" ng-class="{true:'btn-warning', false:'btn-inverse'}[mode == 'line']" ng-click="changeType('LINESTRING')"><i class="icon-white icon-ok"></i>Linie</a>
+        <a class="btn withText" ng-class="{true:'btn-warning', false:'btn-inverse'}[mode == 'point']" ng-click="changeType('POINT')"><i class="icon-white icon-map-marker"></i>Punkt</a>
+        <a class="btn withText" ng-class="{true:'btn-warning', false:'btn-inverse'}[mode == 'edit']" ng-click="editFeature()"><i class="icon-white icon-pencil"></i>Edit</a>
+        <a class="btn delete" ng-class="{true:'btn-warning', false:'btn-inverse'}[mode == 'delete']" ng-click="deleteFeature()"><i class="icon-white  icon-trash"></i></a>
     </div>
 
-    <div class="attrInput">
+    <div class="attrInput" ng-show="attrInput">
         <form name="attributeForm" id="attributeForm">
             <span class="label" ng-class="{true:'label-important', false:'label-success'}[attributeForm.name.$invalid]">Name:</span>
             <input type="text" class="name" name="name" ng-model="editFeature.title" required>

@@ -35,7 +35,7 @@ img { max-width: none; }
 
 map-base-switcher{
   position: absolute;
-  top: 72px;
+  top: 75px;
   left: 235px;
   #layerswitcher{
     z-index: 2400;
@@ -50,10 +50,9 @@ map-base-switcher{
   }
 }
 
-
 map-layer-control{
   position: absolute;
-  top: 72px;
+  top: 75px;
   left: 500px;
   z-index: 2400;
   #layerControl{
@@ -127,7 +126,7 @@ map-layer-control{
 
 map-type-switcher{
   position: absolute;
-  top: 72px;
+  top: 75px;
   right: 200px;
   z-index: 2400;
 }
@@ -138,21 +137,40 @@ map-type-switcher{
   top: 570px;
   left: 260px;
   width: 0px;
-  .selectFeature{
-    .icon-white{
-      margin-right: 6px;
-      margin-left: -7px;
-    }
-  }
   .drawFeature{
-    margin-left: 30px;
+    margin-left: 40px;
     height: 31px;
     .icon-white{
       margin-right: 0px;
       margin-left: 0px;
     }
   }
+  .withText{
+    .icon-white{
+      margin-right: 6px;
+      margin-left: -7px;
+    }
+  }
+  .placeholder{
+    width: 34px;
+    display: inline-block;
+  }
+  .cancel{
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+    padding-right: 8px;
+    padding-left: 10px;
+  }
+  .delete{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .endButton{
+    border-top-left-radius:4px;
+    border-bottom-left-radius:4px;
+  }
 }
+
 
 .attrInput{
   position: absolute;

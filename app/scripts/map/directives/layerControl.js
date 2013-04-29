@@ -8,6 +8,8 @@ angular.module('swa.map')
       link: function postLink(scope, element, attrs) {
           scope.pointLayer = true;
           scope.lineLayer = true;
+          scope.polyLayer = 1;
+
           scope.changeLayerState = function(type){
               if(type == 'LINESTRING'){
                   scope.$emit('setLineLayerState',!scope.lineLayer);
@@ -18,7 +20,13 @@ angular.module('swa.map')
                   scope.pointLayer =  !scope.pointLayer;
               }
 
-          }
+          };
+
+          scope.$on('updateLayerControl', function(e,state) {
+              scope.pointLayer = state.point;
+              scope.lineLayer = state.line;
+              scope.polyLayer = state.poly;
+          });
       }
     };
   });

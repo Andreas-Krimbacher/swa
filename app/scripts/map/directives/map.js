@@ -3,7 +3,7 @@
 angular.module('swa.map')
   .directive('map', function () {
     return {
-      template: '<div id="map"></div><map-base-switcher></map-base-switcher><map-layer-control></map-layer-control><map-type-switcher></map-type-switcher>',
+      templateUrl: '../views/map/map.html',
       restrict: 'E',
       controller: 'MapCtrl',
       link: function postLink(scope, element, attrs) {

@@ -4,7 +4,7 @@
         <span class="caret"></span>
     </a>
     <ul class="dropdown-menu">
-        <li ng-repeat="(key, map) in basemaps" ng-class="{'disabled' : map.active}" ng-click="setBasemap(key)">
+        <li ng-repeat="(key, map) in basemaps" ng-class="{'disabled' : map.active}" ng-click="setBasemap(key)" ng-show="map.displayInSwitcher">
             <a>{{map.name}}</a><i class="icon-ok" ng-show="map.active"></i>
         </li>
     </ul>

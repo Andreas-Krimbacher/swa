@@ -1,5 +1,5 @@
 <div id="layerControl">
-    <util-slider  min='0' max='100' step='1' name='polyLayer' value='50'></util-slider>
+    <util-slider  min='0' max='100' step='1' name='polyLayer' value='{{polyLayer*100}}'></util-slider>
     <div class="btn btn-mini line" ng-class="{true : 'btn-success' , false : 'btn-danger'}[lineLayer]" ng-click="changeLayerState('LINESTRING')"><i class="icon-white icon-ok"></i></div>
     <div class="btn btn-mini point" ng-class="{true : 'btn-success' , false : 'btn-danger'}[pointLayer]" ng-click="changeLayerState('POINT')"><i class="icon-white icon-map-marker"></i></div>
 </div>

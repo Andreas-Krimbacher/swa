@@ -11,6 +11,8 @@ lib.DrawFeature = Class.extend({
 
     iconName : null,
 
+    drawAttributes : null,
+
     init : function(options){
 
         $.extend(true,this,options);
@@ -46,6 +48,11 @@ lib.DrawFeature = Class.extend({
             }
 
             that.toolbarIcon = canvas.toDataURL();
+            if(that.geomType == 'POINT'){
+                that.drawAttributes.graphicWidth = '18';
+                that.drawAttributes.graphicHeight = '18';
+                that.drawAttributes.externalGraphic = that.toolbarIcon;
+            }
         }
     },
     createIconsGlyphicons : function(){
@@ -77,6 +84,11 @@ lib.DrawFeature = Class.extend({
             }
 
             that.toolbarIcon = canvas.toDataURL();
+            if(that.geomType == 'POINT'){
+                that.drawAttributes.graphicWidth = '18';
+                that.drawAttributes.graphicHeight = '18';
+                that.drawAttributes.externalGraphic = that.toolbarIcon;
+            }
         }
     }
 });

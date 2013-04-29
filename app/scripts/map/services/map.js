@@ -35,27 +35,30 @@ angular.module('swa.map')
                 _basemaps = {};
                 _currentBasempas = null;
 
-                var osm = new OpenLayers.Layer.OSM('Simple OSM Map');
-                _basemaps.osm = {name:'OpenStreet Map',map:osm,active:false};
+                var osm = new OpenLayers.Layer.OSM('OSM');
+                _basemaps.osm = {name:'OpenStreet Map',map:osm,active:false,displayInSwitcher: true};
+
+                var publishBase = new OpenLayers.Layer.OSM("Publish","styles/images/publish.png");
+                _basemaps.publish = {name:'Publish',map:publishBase,active:false,displayInSwitcher: false};
 
                 if(!offline){
                     var gmap = new OpenLayers.Layer.Google(
                         "Google Streets",
                         {numZoomLevels: 22}
                     );
-                    _basemaps.gmap = {name:'Google Streets',map:gmap,active:false};
+                    _basemaps.gmap = {name:'Google Streets',map:gmap,active:false,displayInSwitcher: true};
 
                     var ghyb = new OpenLayers.Layer.Google(
                         "Google Hybrid",
                         {type: google.maps.MapTypeId.HYBRID, numZoomLevels: 22}
                     );
-                    _basemaps.ghyb = {name:'Google Hybrid',map:ghyb,active:false};
+                    _basemaps.ghyb = {name:'Google Hybrid',map:ghyb,active:false,displayInSwitcher: true};
 
                     var gsat = new OpenLayers.Layer.Google(
                         "Google Satellite",
                         {type: google.maps.MapTypeId.SATELLITE, numZoomLevels: 22}
                     );
-                    _basemaps.gsat = {name:'Google Luftbild',map:gsat,active:false};
+                    _basemaps.gsat = {name:'Google Luftbild',map:gsat,active:false,displayInSwitcher: true};
 
                     _setBasemap('gsat');
                 }
@@ -77,6 +80,21 @@ angular.module('swa.map')
             },
             setBasemap: function(id){
                 _setBasemap(id);
+            },
+            addLayers : function(layers){
+                map.addLayers(layers);
+            },
+            addControls : function(controls){
+                for(var x in controls){
+                    if(!controls[x].displayClass){
+                        for(var y in controls[x]){
+                            map.addControl(controls[x][y]);
+                        }
+                    }
+                    else{
+                        map.addControl(controls[x]);
+                    }
+                }
             }
         }
     });
